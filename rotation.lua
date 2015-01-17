@@ -4,6 +4,18 @@ local combatRotation = {
 	{"!109773", "!player.buffs.multistrike"},
 	{"!109773", "!player.buffs.spellpower"},
 	
+	-- Cooldowns
+	{"Dark Soul: Instability", "modifier.cooldowns"},
+	{"Summon Terrorguard", "modifier.cooldowns"},
+	{"Summon Doomguard", "modifier.cooldowns"},
+	
+	--Defensive & Utilities
+	{"#5512", "player.health < 30"},
+	{"Unending Resolve", "modifier.lcontrol"},
+	{"Sacrificial Pact", "modifier.lalt"},
+	{"Shadow Fury", "modifier.lshift", "mouseover.ground"},
+	
+	
 --Rotation(s)
 	
 	-- Regular Rotation
