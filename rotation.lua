@@ -13,7 +13,7 @@ local combatRotation = {
 	{"#5512", "player.health < 30"},
 	{"Unending Resolve", "modifier.lcontrol"},
 	{"Sacrificial Pact", "modifier.lalt"},
-	{"Shadow Fury", "modifier.lshift", "mouseover.ground"},
+	{"Shadowfury", "modifier.lshift", "mouseover.ground"},
 	
 	
 --Rotation(s)
