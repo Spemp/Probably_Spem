@@ -1,0 +1,6 @@
+## Interface: 60000
+## Title: Probably - Spem's Rotations
+## Notes: ProbablyEngine Custom Rotation
+## Dependencies: Probably
+
+rotation.lua
