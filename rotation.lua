@@ -5,7 +5,7 @@ local combatRotation = {
 	{"!109773", "!player.buffs.spellpower"},
 	
 	-- Cooldowns
-	{"Dark Soul: Instability", "modifier.cooldowns"},
+	{"Dark Soul: Knowledge", "modifier.cooldowns"},
 	{"Summon Terrorguard", "modifier.cooldowns"},
 	{"Summon Doomguard", "modifier.cooldowns"},
 	
