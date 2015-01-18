@@ -17,7 +17,7 @@ local combatRotation = {
 	{"Shadowfury", "modifier.lshift", "mouseover.ground"},
 	
 	--Pet
-	{"Command Demon", "pet.energy => 60"},
+	{"Command Demon", "pet.energy > 60"},
 	{"Axe Toss", "modifier.interrupt"},
 	
 --Rotation(s)
