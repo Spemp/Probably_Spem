@@ -54,13 +54,15 @@ local combatRotation = {
 	{"157695", "player.debuff(157695).count < 5"}, -- Get Demonbolt up to 4 stacks of debuff
 	{"6353", {"player.debuff(157695).count = 4", "player.buff(122351)", "!player.spell(101508).exists"}}, -- Soul Fire if Demonbolt stacks are at 4
 	{"6353", {"player.debuff(157695).count = 4", "player.buff(140074)", "!player.spell(101508).exists"}},
+	{"6353", {"player.debuff(157695).count >= 3", "player.demonicfury < 320"}},
 	{"6353", {"player.debuff(157695).count = 4", "player.buff(113861)"}}, -- Soul Fire if Demonbolt stacks are at 4 and Dark Souls is up
 	{"103964", "player.debuff(157695.count = 4"}, -- Touch of Chaos incase of nothing up.
 	}, "player.buff(103958)"},
 	
 	
 	
-	{"/cancelaura Metamorphosis", {"player.debuff(157695).count = 4", "player.buff(103958)", "!player.buff(113861)", "player.demonicfury <= 650", "target.debuff(603).duration > 25"}}
+	{"/cancelaura Metamorphosis", {"player.debuff(157695).count = 4", "player.buff(103958)", "!player.buff(113861)", "player.demonicfury <= 650", "target.debuff(603).duration > 25"}},
+	{"/cancelaura Metamorphosis", {"player.buff(103958)", "!player.buff(113861)", "player.demonicfury <= 100", "target.debuff(603).duration > 25"}},
 	
 	
 }
