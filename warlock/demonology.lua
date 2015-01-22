@@ -6,8 +6,8 @@ local combatRotation = {
 	
 -- Cooldowns
 	-- Dark Souls & Archimondes Darness
---	{"113861", {"modifier.cooldowns", "!talent(16)", "target.debuff(47960)", "player.spell(105174).charges = 0"}},
---	{"113861", {"modifier.cooldowns", "talent(16)", "player.spell(113861).charges = 2", "target.debuff(47960)", "player.spell(105174).charges = 0"}},
+--	{"113861", {"modifier.cooldowns", "!talent(7, 1)", "target.debuff(47960)", "player.spell(105174).charges = 0"}},
+	{"113861", {"modifier.cooldowns", "talent(7,1)", "player.spell(113861).charges = 2", "target.debuff(47960)", "player.spell(105174).charges = 0"}},
 --	{"113861", {"modifier.cooldowns", "target.debuff(47960)", "!player.buff(113861)", "player.spell(105174).charges = 0"}},
 	
 	--Imp Swarm
@@ -57,6 +57,8 @@ local combatRotation = {
 	{"6353", {"player.debuff(157695).count >= 3", "player.demonicfury < 320"}},
 	{"6353", {"player.debuff(157695).count = 4", "player.buff(113861)"}}, -- Soul Fire if Demonbolt stacks are at 4 and Dark Souls is up
 	{"103964", "player.debuff(157695.count = 4"}, -- Touch of Chaos incase of nothing up.
+	{"/cancelaura Metamorphosis", {"player.debuff(157695).count = 4", "player.buff(103958)", "!player.buff(113861)", "player.demonicfury <= 650", "target.debuff(603).duration > 25"}},
+	{"/cancelaura Metamorphosis", {"player.buff(103958)", "!player.buff(113861)", "player.demonicfury <= 100", "target.debuff(603).duration > 25"}},
 	}, "player.buff(103958)"},
 	
 	
