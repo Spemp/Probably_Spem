@@ -38,8 +38,8 @@ local combatRotation = {
 	{"105174", {"player.spell(105174).charges >= 2", "!target.debuff(47960)", "!player.lastcast"}}, --Hand of Gul'dan
 	{"105174", {"target.debuff(47960)", "target.debuff(47960).duration <= 4", "!player.lastcast"}}, --Hand of Gul'dan
 	{"105174", {"player.spell(105174).charges >= 1", "player.spell(105174).cooldown <= 4", "!player.lastcast"}},
-	{"6353", {"player.buff(122351)", "player.buff(113861).duration <= 2"}}, -- Soulfire with Molten Core if Dark Souls is about to drop
-	{"6353", {"player.buff(140074)", "player.buff(113861).duration <= 2"}}, -- Soulfire with Molten Core if Dark Souls is about to drop(With Codex)
+	{"6353", {"player.buff(122351)", "player.buff(113861).duration <= 4"}}, -- Soulfire with Molten Core if Dark Souls is about to drop
+	{"6353", {"player.buff(140074)", "player.buff(113861).duration <= 4"}}, -- Soulfire with Molten Core if Dark Souls is about to drop(With Codex)
 	{"6353", {"player.buff(122351).count >= 4", "!player.spell(101508).exists"}},	-- Soulfire if MoltenCore is at 4 or more stacks
 	{"6353", {"player.buff(140074).count >= 4", "player.spell(101508).exists"}}, -- With Codex
 	{"6353", "target.health <= 25", "target"}, -- Soulfire @ 25% health
