@@ -6,14 +6,14 @@ local combatRotation = {
 	
 -- Cooldowns
 	-- Dark Souls & Archimondes Darness
-	{"113861", {"modifier.cooldowns", "!talent(16)", "target.debuff(47960)", "player.spell(105174).charges = 0"}},
-	{"113861", {"modifier.cooldowns", "talent(16)", "player.spell(113861).charges = 2", "target.debuff(47960)", "player.spell(105174).charges = 0"}},
-	{"113861", {"modifier.cooldowns", "target.debuff(47960)", "player.spell(105174).charges = 0"}},
+--	{"113861", {"modifier.cooldowns", "!talent(16)", "target.debuff(47960)", "player.spell(105174).charges = 0"}},
+--	{"113861", {"modifier.cooldowns", "talent(16)", "player.spell(113861).charges = 2", "target.debuff(47960)", "player.spell(105174).charges = 0"}},
+--	{"113861", {"modifier.cooldowns", "target.debuff(47960)", "!player.buff(113861)", "player.spell(105174).charges = 0"}},
 	
 	--Imp Swarm
 	{"104316", {"modifier.cooldowns", "target.range <= 40", "player.spell(113861).cooldown >= 50"}},
 	{"104316", {"modifier.cooldowns", "target.range <= 40", "player.spell(113861).cooldown >= 50"}},
-	{"104316", {"target.debuff(47960)", "target.range <= 40"}},
+	{"104316", {"modifier.cooldowns", "target.debuff(47960)", "target.range <= 40"}},
 	
 	--Defensive(s) & Utilities
 	{"#5512", "player.health < 30"}, -- Healthstones
